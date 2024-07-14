@@ -2,8 +2,8 @@
 
 This Django application provides a comprehensive platform for gas utility customers to efficiently manage their service interactions. Customers can:
 
--Submit Service Requests Online: Easily report issues or request services through a user-friendly interface.
--Track Service Request Status: Monitor the progress and status of submitted service requests in real-time.
+- Submit Service Requests Online: Easily report issues or request services through a user-friendly interface.
+- Track Service Request Status: Monitor the progress and status of submitted service requests in real-time.
 
 This application aims to enhance customer satisfaction by providing transparent, accessible, and efficient service management.
 
@@ -14,7 +14,6 @@ Here through the admin Login the Staff can edit and update the entries made by t
 ## Installation
 Before running the project, ensure you have Python 3.12 installed on your computer. 
 Install Django, clone the repository, and execute the runserver command to start the project.
-
 
 ## Description
 
