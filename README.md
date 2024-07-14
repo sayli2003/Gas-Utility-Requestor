@@ -43,8 +43,6 @@ Install Django, clone the repository, and execute the runserver command to start
 8. On the Navbar, you will find important links to - Create a Request, Logout, User Dashboard.
 
     
- ## Demo
 ## Project Demo
 
-[![Watch the video](![image](https://github.com/user-attachments/assets/f0374f68-7d5c-4061-ae7c-0392763c8007)
-)](https://drive.google.com/file/d/1OxhWLSk8udbCXIxNMVjx12PJng6S_0D2/view?usp=sharing)
+[![Watch the video](https://github.com/user-attachments/assets/f0374f68-7d5c-4061-ae7c-0392763c8007)](https://drive.google.com/file/d/1OxhWLSk8udbCXIxNMVjx12PJng6S_0D2/view?usp=sharing)
