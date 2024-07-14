@@ -19,8 +19,6 @@ def signup(request):
     return render(request, 'signup.html', {'form': form})
 
 def user_login(request):
-    if request.user:
-        return redirect('/consumer/profile')
     if request.method == 'POST':
         form = UserLoginForm(request.POST)
         username = request.POST['username']

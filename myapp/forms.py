@@ -22,7 +22,7 @@ class ServiceRequestForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'email': forms.EmailInput(attrs={'class': 'form-control'}),
-            'service_type': forms.TextInput(attrs={'class': 'form-control'}),
+            'service_type': forms.Select(attrs={'class': 'form-control'}),
             'description': forms.Textarea(attrs={'class': 'form-control'}),
             'status': forms.Select(attrs={'class': 'form-control'}),
             'upload': forms.ClearableFileInput(attrs={'required': False}),
