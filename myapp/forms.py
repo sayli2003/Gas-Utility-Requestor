@@ -5,7 +5,7 @@ class ServiceRequestForm(forms.ModelForm):
     class Meta:
         model = ServiceRequest
         # 'name', 'email',
-        fields = ['name', 'email','service_type', 'description', 'status']
+        fields = ['name', 'email','service_type', 'description', 'upload','status']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'email': forms.EmailInput(attrs={'class': 'form-control'}),

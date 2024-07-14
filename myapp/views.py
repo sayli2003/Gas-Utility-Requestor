@@ -3,10 +3,12 @@ from .forms import ServiceRequestForm
 
 def create_service_request(request):
     if request.method == 'POST':
-        form = ServiceRequestForm(request.POST)
+        form = ServiceRequestForm(request.POST,request.FILES)
         if form.is_valid():
             form.save()
             return redirect('service_request_success')
+        else:
+            print(form.errors)
     else:
         form = ServiceRequestForm()
     return render(request, 'create_service_request.html', {'form': form})

@@ -12,6 +12,7 @@ class ServiceRequest(models.Model):
     email = models.EmailField(unique=False)
     service_type = models.CharField(max_length=100)
     description = models.TextField()
+    upload = models.FileField(upload_to='documents/')
     status = models.CharField(max_length=100, choices=STATUS_CHOICES, default='Pending')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
