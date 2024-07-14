@@ -3,6 +3,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .forms import UserSignupForm, UserLoginForm
 from .forms import ServiceRequestForm
+from .models import ServiceRequest
+
 
 def signup(request):
     if request.method == 'POST':
@@ -17,6 +19,8 @@ def signup(request):
     return render(request, 'signup.html', {'form': form})
 
 def user_login(request):
+    if request.user:
+        return redirect('/consumer/profile')
     if request.method == 'POST':
         form = UserLoginForm(request.POST)
         username = request.POST['username']
@@ -38,7 +42,8 @@ def user_logout(request):
     return redirect('login')
 
 def profile(request):
-    return render(request, 'dashboard.html')
+    service_requests=ServiceRequest.objects.filter(name__icontains=request.user.username)
+    return render(request, 'dashboard.html', {'service_requests': service_requests})
 
 
 
